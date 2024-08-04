@@ -670,7 +670,7 @@ body:not(.user-is-tabbing) a:focus {
 
   .about__photo {
     width: 150px;
-    border-radius: 50%;
+    border-radius: 10%;
   }
 
   .full-width .row {
