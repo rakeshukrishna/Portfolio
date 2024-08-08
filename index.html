@@ -51,6 +51,9 @@
           <li class="nav__item">
             <a href="#contact" class="nav__link">Contact</a>
           </li>
+          <li class="nav-item highlighted">
+            <a href="#HILS"> HILS</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -648,6 +651,117 @@
       </div>
     </section>
 
+        <!-- ***** About HILS ***** -->
+
+        <section class="HILS" id="HILS">
+          <div class="container">
+            <h2>About HILS Facility</h2>
+            <div class="contact__info">
+              <p>
+                Hardware in the Loop Simulation is a critical facility in the verification and validation 
+                of products, particularly in the context of modern, high-end, complex embedded systems. HIL enables 
+                the testing of embedded controllers by integrating them with real-time simulations of the physical 
+                systems they are designed to manage. This approach allows engineers to validate system behavior 
+                under a wide range of conditions and scenarios that would be challenging, costly, or even dangerous 
+                to replicate in a physical environment.</p>
+                <p>
+                By providing a controlled, repeatable testing environment, HIL ensures that both software and 
+                hardware components of the embedded system interact as expected with their external environment. 
+                This accelerates the development process, enhances product reliability, and significantly reduces 
+                the risk of failures in the field, which is especially crucial given the complexity and 
+                safety-critical nature of applications such as automotive, aerospace, industrial automation, 
+                robotics, and consumer electronics.
+              </p>
+              <p>
+                <strong>HIL - Beyond Integration & Testing</strong>
+                <br>
+                Hardware in the Loop simulation is a versatile and powerful tool that extends far beyond its traditional use in integration and testing. It can be effectively applied throughout the entire system development V-cycle, from early research and proof of concept to deployment and maintenance.
+                <br>
+                <li>Early Research & Proof of Concept:
+                  <br>
+                    HIL can be utilized in the initial stages of 
+                        development to explore and validate new ideas. Engineers can test the feasibility of 
+                        different approaches in a controlled environment, allowing them to refine concepts 
+                        before committing to a particular design. This helps in identifying potential issues 
+                        and verifying the viability of a solution early on, reducing the risk of costly 
+                        redesigns later.</li>
+                <li>Requirements: 
+                  <br>
+                  During the requirements phase, HIL can be used to validate and refine 
+                  the specifications. By simulating the system's operational environment, engineers can ensure 
+                  that the requirements are realistic and complete, identifying gaps or ambiguities early in the 
+                  process.</li>
+                <li>Architecture & Design: 
+                  <br>
+                  HIL supports the architecture and design phases by enabling the 
+                  simulation of different architectural choices. Engineers can assess how different system 
+                  components interact in real-time, allowing for better-informed decisions about system structure, 
+                  component interfaces, and the allocation of functions across hardware and software.</li>
+                <li>Implementation: 
+                  <br>
+                  In the implementation phase, HIL allows developers to test individual components 
+                  against simulated environments before they are integrated into the full system. This helps in 
+                  verifying that each module performs as expected and meets its design specifications, reducing 
+                  integration issues later on.</li>
+                <li>Integration: 
+                  <br>
+                  HIL is traditionally known for its role in system integration, where it enables 
+                  testing of the complete system by combining real hardware with simulated environments. This phase 
+                  ensures that all components work together as intended and that the system meets its overall 
+                  requirements.</li>
+                <li>Test & Validation: 
+                  <br>
+                  During testing and validation, HIL allows for rigorous, repeatable testing 
+                  of the system under a wide range of scenarios, including edge cases that might be difficult or 
+                  risky to test in the real world. This ensures the system’s reliability, safety, and performance 
+                  before it is deployed.</li>
+                <li>In-System Testing: 
+                  <br>
+                  HIL can also be used for in-system testing, where the actual hardware is 
+                  tested within the context of a simulated environment that mimics the final deployment conditions. 
+                  This helps in identifying issues that might only become apparent in the final operational 
+                  environment.</li>
+                <li>Deployment & Maintenance: 
+                  <br>
+                  Even after deployment, HIL remains valuable. It can be used for 
+                  ongoing validation and regression testing when updates or patches are applied to the system. 
+                  HIL can simulate the operational environment to ensure that new changes do not introduce 
+                  unforeseen issues. It also aids in troubleshooting and refining the system throughout 
+                  its lifecycle.</li>
+                <br>
+                By incorporating HIL throughout the system development V-cycle, organizations can 
+                significantly enhance the robustness, reliability, and performance of their products, 
+                while reducing time-to-market and development costs. This comprehensive application of 
+                HIL ensures that each phase of development is informed by real-world data and scenarios, 
+                leading to a more thoroughly validated and dependable system.
+              </p>
+              <hr>
+              <p><strong>Variations of HILS Facilities</strong></p>
+              <p>HILS facility can be implemented at various levels.
+                <li>Signal, Power, and Mechanical</li>
+              </p>
+              <p>Each levels catering to different aspects of system testing and validation. 
+                These levels allow engineers to simulate 
+                and test different types of interactions between the hardware and the simulated environment, 
+                depending on the specific needs of the system being develope</p>
+              <p>Signal Level HIL: At the signal level, HIL focuses on the interaction of the embedded 
+                system's control units with the simulated environment via electrical signals. This is 
+                the most common form of HIL, where inputs and outputs are represented by digital or 
+                analog signals that the hardware can process.</p>
+              <p>Power Level HIL: Power level HIL involves the simulation and testing of power electronics 
+                and energy systems. Here, the focus is on the flow of power rather than just signals, 
+                simulating real-world electrical loads, battery systems, motors, or even entire power grids.</p>
+              <p>Mechanical Level HIL: Mechanical level HIL involves simulating mechanical loads and 
+                interactions, often through physical actuators or hydraulic systems that mimic the forces 
+                and motions the hardware would experience in the real world.</p>
+            </div>
+            <hr>
+            <div class="work__image-box">
+              <img src="./images/beyond_testing.png" class="work__image" alt="Project 1" />
+            </div>
+            <hr>
+          </div>
+        </section>
   </main>
 
   <footer class="footer">
@@ -658,7 +772,6 @@
 
   <!-- Back to Top Button -->
   <button onclick="topFunction()" id="backToTopBtn" title="Go to top">Top</button>
-
   <script>
     // Get the button
     let mybutton = document.getElementById("backToTopBtn");
@@ -683,5 +796,4 @@
     }
   </script>
 </body>
-
 </html>

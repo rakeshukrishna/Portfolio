@@ -713,3 +713,20 @@ hr {
 .work__list li {
     margin-bottom: 5px; /* Space between list items */
   }
+
+  /* Highlight the About nav-item */
+.nav-item.highlighted a {
+    text-decoration: none;
+    background-color: #8175ec; /* Light blue background */
+    color: white; /* White text color */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 10px 20px; /* Ensure padding is the same as other items */
+    line-height: 1.5; 
+  }
+
+  /* Optional: Add a hover effect */
+.nav-item.highlighted a:hover {
+    background-color: #6495ed; /* Slightly darker blue on hover */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+  }
