@@ -223,8 +223,8 @@ body:not(.user-is-tabbing) a:focus {
     /*padding: 1rem 4.2rem;*/
     padding: 10px 20px;
     margin-top: 20px;
-    color: #fff;
-    background-color: #ff4081; /* or your preferred button color */
+    color: #000000;
+    background-color: #8b19f5; /* or your preferred button color */
     text-decoration: none;
     border-radius: 5px;
     text-decoration: none;
@@ -452,24 +452,29 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__box {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
+    margin-bottom: 2rem; /* Adjust space between work__box elements */
+    padding: 10px; /* Adjust padding within each work__box */
+    border: 1px solid #ccc; 
+    box-sizing: border-box; /* Ensures padding and border are included in the width/height */
 }
 
 @media(max-width: 900px) {
     .work__box {
-        align-items: initial;
+        /*align-items: initial;*/
         flex-direction: column-reverse;
+        align-items: flex-start;
     }
 }
 
 .work__box:not(:last-child) {
-    margin-bottom: 25rem;
+    margin-bottom: 2rem;
 }
 
 @media(max-width: 500px) {
     .work__box:not(:last-child) {
-        margin-bottom: 20rem;
+        margin-bottom: 2rem;
     }
 }
 
@@ -480,6 +485,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__text {
     /*flex: 0 0 30%;*/
+    margin: 0; /* Reset margin for text containers */
     flex: 2;
     padding: 10px;
 }
@@ -488,6 +494,7 @@ body:not(.user-is-tabbing) a:focus {
     /* list-style-type: square;
     list-style-position: inside;
     margin-bottom: var(--gutter-normal);*/
+    margin: 10px 0; /* Adjust margin of the list */
     list-style-type: disc; /* Default bullet style */
     padding-left: 20px; /* Add padding to the left */
 }
@@ -504,15 +511,17 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__image-box {
-    /*margin-bottom: var(--gutter-normal);*/
-    flex: 1;
-    padding: 10px;
+    /*margin-bottom: var(--gutter-normal);
+    flex: 1;*/
+    flex-shrink: 0; /* Prevents the image from shrinking */
+    /*padding: 10px;*/
+    margin-left: 20px; /* Space between text and image */
 }
 
 @media(min-width: 901px) {
     .work__image-box {
         flex: 1;
-        margin: 0 0 0 10rem;
+        margin: 0 0 0 2rem;
     }
 }
 
@@ -590,7 +599,7 @@ body:not(.user-is-tabbing) a:focus {
 .contact__info {
     /*max-width: var(--container-medium-width);*/
     max-width: 100%; /* Make it take up the full width of the parent */
-    padding: 1px; /* Add padding if needed for spacing */
+    padding: 0px; /* Add padding if needed for spacing */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
@@ -692,6 +701,7 @@ body:not(.user-is-tabbing) a:focus {
   .work__image {
     max-width: 100%;
     height: auto;
+    border-radius: 8px; /* Optional: adds rounded corners */
     cursor: pointer; /* Change the cursor to pointer on hover */
   }
 
@@ -780,4 +790,15 @@ hr {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+
+ul, li {
+    margin: 0; /* Reset margin for lists */
+    padding: 0; /* Reset padding for lists */
+}
+
+hr {
+    margin: 20px 0; /* Adjust space before and after the hr */
+    border: none; /* Removes default border */
+    border-top: 1px solid #ccc; /* Adds a custom border */
 }
