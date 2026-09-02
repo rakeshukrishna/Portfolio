@@ -5,7 +5,7 @@
 .hero-layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(280px,.65fr);gap:72px;align-items:center}
 .hero-kicker{display:inline-flex;align-items:center;gap:10px;color:var(--color-highlight);font-size:.82rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
 .hero-kicker::before{content:"";width:30px;height:1px;background:currentColor}
-.hero-title{margin-top:18px;font-size:clamp(2.8rem,5.4vw,5.25rem);letter-spacing:-.045em}
+.hero-title{margin-top:18px;font-size:clamp(2.1rem,3.4vw,3.4rem);letter-spacing:-.03em}
 .hero-title .accent{color:var(--color-accent)}
 .hero-lead{max-width:720px;margin-top:26px;color:var(--color-muted);font-size:clamp(1rem,1.5vw,1.2rem);line-height:1.8}
 .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
