@@ -1,0 +1,19 @@
+/* V2.1.0 — Hero */
+.hero{position:relative;isolation:isolate;min-height:100svh;display:flex;align-items:center;overflow:hidden;padding:110px 0 70px}
+.hero::before{content:"";position:absolute;inset:-40px;z-index:-2;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:44px 44px;transform:perspective(900px) rotateX(52deg) scale(1.5) translateY(16%);transform-origin:center bottom;mask-image:linear-gradient(to top,black,transparent 80%)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-3;background:radial-gradient(circle at 78% 32%,rgba(0,168,255,.16),transparent 30%),radial-gradient(circle at 15% 75%,rgba(65,200,255,.07),transparent 28%),var(--color-bg)}
+.hero-layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(280px,.65fr);gap:72px;align-items:center}
+.hero-kicker{display:inline-flex;align-items:center;gap:10px;color:var(--color-highlight);font-size:.82rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+.hero-kicker::before{content:"";width:30px;height:1px;background:currentColor}
+.hero-title{margin-top:18px;font-size:clamp(2.8rem,5.4vw,5.25rem);letter-spacing:-.045em}
+.hero-title .accent{color:var(--color-accent)}
+.hero-lead{max-width:720px;margin-top:26px;color:var(--color-muted);font-size:clamp(1rem,1.5vw,1.2rem);line-height:1.8}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.hero-visual{display:flex;justify-content:center}
+.profile-frame{position:relative;width:min(360px,72vw);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 25%,rgba(65,200,255,.2),rgba(255,255,255,.025) 45%,rgba(0,0,0,.2));border:1px solid rgba(65,200,255,.35);box-shadow:0 0 0 14px rgba(0,168,255,.035),0 25px 70px rgba(0,0,0,.35)}
+.profile-frame::before,.profile-frame::after{content:"";position:absolute;border-radius:50%;border:1px solid rgba(65,200,255,.18)}
+.profile-frame::before{inset:-18px}
+.profile-frame::after{inset:22px}
+.profile-placeholder{font:600 1rem var(--font-heading);color:var(--color-muted);letter-spacing:.08em;text-transform:uppercase}
+.hero-scroll{position:absolute;left:50%;bottom:24px;transform:translateX(-50%);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--color-muted)}
+@media(max-width:900px){.hero-layout{grid-template-columns:1fr;gap:48px}.hero-visual{order:-1}.profile-frame{width:260px}.hero{text-align:center}.hero-kicker{justify-content:center}.hero-lead{margin-inline:auto}.hero-actions{justify-content:center}}

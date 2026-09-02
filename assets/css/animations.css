@@ -1,0 +1,11 @@
+/* V2.1.0 — Motion */
+@keyframes revealUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes gridMove{to{background-position:44px 44px,44px 44px}}
+.hero-kicker{animation:revealUp .6s both}
+.hero-title{animation:revealUp .7s .08s both}
+.hero-lead{animation:revealUp .7s .16s both}
+.hero-actions{animation:revealUp .7s .24s both}
+.stats{animation:revealUp .7s .32s both}
+.tech-ribbon{animation:revealUp .7s .4s both}
+.hero::before{animation:gridMove 20s linear infinite}
+@media(prefers-reduced-motion:reduce){.hero::before{animation:none}.hero-kicker,.hero-title,.hero-lead,.hero-actions,.stats,.tech-ribbon{animation:none}}

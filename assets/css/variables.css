@@ -1,0 +1,25 @@
+/* Portfolio V2 - variables.css */
+:root{
+  --color-bg:#07131F;
+  --color-surface:#10283F;
+  --color-surface-light:#183A5A;
+  --color-accent:#00A8FF;
+  --color-highlight:#41C8FF;
+  --color-success:#19C37D;
+  --color-text:#F5F7FA;
+  --color-muted:#A8B6C5;
+  --glass:rgba(255,255,255,.05);
+  --border:rgba(255,255,255,.08);
+
+  --font-heading:'Poppins',sans-serif;
+  --font-body:'Inter',sans-serif;
+
+  --container:1200px;
+  --radius-sm:8px;
+  --radius-md:16px;
+  --radius-lg:24px;
+
+  --space-1:4px; --space-2:8px; --space-3:16px;
+  --space-4:24px; --space-5:32px; --space-6:48px;
+  --space-7:64px; --space-8:96px;
+}

@@ -1,0 +1,32 @@
+/* Portfolio V2 — responsive.css */
+@media(max-width:1100px){
+ .hero-title{font-size:3.4rem}
+ .about-layout{gap:40px}
+}
+@media(max-width:900px){
+ .hero{min-height:auto;padding:140px 0 72px}
+ .hero-layout{grid-template-columns:1fr;gap:48px}
+ .hero-visual{order:-1}
+ .profile-frame{width:260px;height:260px}
+ .about-layout{grid-template-columns:1fr}
+ .about-photo-frame{margin-inline:auto}
+ .grid-3,.education-grid,.projects-secondary-grid,.knowledge-grid{grid-template-columns:repeat(2,1fr)}
+ .projects-grid{grid-template-columns:1fr}
+ .activities-block{grid-template-columns:1fr;gap:20px}
+ .process-row{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:640px){
+ .container{width:min(100% - 2rem,var(--container))}
+ .hero{padding-top:96px;text-align:center}
+ .hero-title{font-size:clamp(2.4rem,11vw,3.2rem)}
+ .hero-actions{justify-content:center}
+ .btn{width:100%}
+ .hero-actions .btn{width:auto}
+ .profile-frame{width:220px;height:220px}
+ .tech-ribbon{gap:8px}.tech-pill{font-size:.8rem}
+ .stats{grid-template-columns:repeat(2,1fr)}
+ .grid-3,.education-grid,.projects-secondary-grid,.knowledge-grid{grid-template-columns:1fr}
+ .process-row{grid-template-columns:repeat(2,1fr)}
+ .mini-project-card{flex-direction:column}
+ .contact-actions .btn{width:100%}
+}

@@ -1,0 +1,18 @@
+/* V2.1.0 — Navigation */
+.site-header{position:fixed;inset:0 0 auto;z-index:1000;transition:background .3s ease,box-shadow .3s ease,border-color .3s ease}
+.site-header.is-scrolled{background:rgba(7,19,31,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.navbar{min-height:76px;display:flex;align-items:center;justify-content:space-between}
+.logo{font:700 1.45rem var(--font-heading);letter-spacing:.08em}
+.nav-menu{display:flex;align-items:center;gap:28px}
+.nav-link{position:relative;color:var(--color-muted);font-size:.92rem}
+.nav-link::after{content:"";position:absolute;left:0;bottom:-7px;width:0;height:2px;background:var(--color-accent);transition:width .25s ease}
+.nav-link:hover,.nav-link:focus-visible,.nav-link.is-active{color:var(--color-text)}
+.nav-link:hover::after,.nav-link:focus-visible::after,.nav-link.is-active::after{width:100%}
+.menu-toggle{display:none;border:0;background:transparent;color:var(--color-text);cursor:pointer}
+.menu-toggle span{display:block;width:24px;height:2px;margin:5px 0;background:currentColor;transition:.25s}
+@media(max-width:900px){
+ .menu-toggle{display:block}
+ .nav-menu{position:absolute;top:76px;left:1rem;right:1rem;display:flex;flex-direction:column;align-items:stretch;gap:0;padding:10px;border:1px solid var(--border);border-radius:16px;background:rgba(7,19,31,.96);backdrop-filter:blur(18px);opacity:0;visibility:hidden;transform:translateY(-8px);transition:.25s}
+ .nav-menu.is-open{opacity:1;visibility:visible;transform:none}
+ .nav-link{display:block;padding:14px}
+}
