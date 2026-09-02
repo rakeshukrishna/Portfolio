@@ -4,6 +4,7 @@
  .about-layout{gap:40px}
 }
 @media(max-width:900px){
+ .hero-title{font-size:2.8rem}
  .hero{min-height:auto;padding:140px 0 72px}
  .hero-layout{grid-template-columns:1fr;gap:48px}
  .hero-visual{order:-1}
@@ -18,7 +19,7 @@
 @media(max-width:640px){
  .container{width:min(100% - 2rem,var(--container))}
  .hero{padding-top:96px;text-align:center}
- .hero-title{font-size:clamp(2.4rem,11vw,3.2rem)}
+ .hero-title{font-size:clamp(1.8rem,8vw,2.4rem)}
  .hero-actions{justify-content:center}
  .btn{width:100%}
  .hero-actions .btn{width:auto}
